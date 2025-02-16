@@ -1,49 +1,29 @@
-# Create MERN App
+# Create MERN App Connected
 
-🚀 **Create a fully structured MERN (MongoDB, Express, React, Node.js) application instantly!**
+## 🚀 Introduction
+`create-mern-app-connected` is a CLI tool that helps you quickly scaffold a **MERN (MongoDB, Express, React, Node.js) stack** application with a fully structured backend and frontend. This tool saves time by generating a pre-configured project with best practices already in place.
 
-## 🎯 **Project Goals**
-This CLI tool is designed to help developers quickly scaffold a complete MERN stack application with a well-structured backend and frontend, reducing setup time and ensuring best practices.
+## 📦 Installation & Usage
 
-### **Features:**
-- 📦 **Pre-configured MERN Stack** with folder structure
-- 🔌 **MongoDB Connection Setup**
-- 🔐 **JWT Authentication Ready**
-- 📂 **Organized Backend with MVC Pattern**
-- 🎨 **React Frontend Boilerplate**
-- 🛠️ **Easily Extendable & Customizable**
-
----
-
-## 🛠️ **Installation & Usage**
-
-### **1️⃣ Using `npx` (No installation required)**
+### **Using `npx` (No Installation Required)**
 ```sh
-npx create-mern my-project
+npx create-mern-app-connected my-project
 ```
 
-### **2️⃣ Installing Globally**
+### **Install Globally (For Frequent Use)**
 ```sh
-npm install -g create-mern-app
-create-mern my-project
+npm install -g create-mern-app-connected
+```
+Then, create a new MERN project:
+```sh
+create-mern-app-connected my-project
 ```
 
-### **3️⃣ Cloning & Running Locally**
-If you want to modify or contribute:
-```sh
-git clone https://github.com/yourusername/create-mern-app.git
-cd create-mern-app
-npm link  # Link it globally for testing
-create-mern test-project  # Test the command
-```
-
----
-
-## 📂 **Generated Project Structure**
-After running the command, your project will have the following structure:
+## 📂 Project Structure
+Once the command is run, the following project structure is generated:
 ```
 my-project/
-├── server/
+│── server/
 │   ├── config/
 │   ├── controllers/
 │   ├── middleware/
@@ -53,47 +33,37 @@ my-project/
 │   ├── seeders/
 │   ├── services/
 │   ├── utils/
-│   ├── .env (ignored)
+│   ├── .gitignore
+│   ├── .envexample
+│   ├── config/db.js
 │   ├── index.js
-│   ├── package.json
-│   └── README.md
-│
-├── client/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   ├── index.js
-│   └── README.md
-│
-└── README.md
+│── client/ (React frontend - optional)
+│── README.md
 ```
 
----
+## ⚙️ Features
+✅ Generates a **full MERN stack** project structure in seconds  
+✅ Includes essential **server setup** with Express.js  
+✅ Provides **MongoDB connection** and JWT authentication configuration  
+✅ Preconfigured **CORS and middleware** support  
+✅ Works with **npx** for easy, one-time use  
 
-## 🔄 **Updating the CLI**
-If you installed it globally and want the latest version:
+## 🛠 How It Works
+The CLI script automates the creation of all necessary folders and files for a MERN project. It also initializes a Git repository and installs dependencies automatically.
+
+## 🆕 Updating the Package
+If you need to update the CLI, simply run:
 ```sh
-npm update -g create-mern-app
+npm update -g create-mern-app-connected
 ```
-If you're using GitHub Actions for auto-updates, just push to the repository, update `package.json` version, and run:
+Or, if you installed it locally:
 ```sh
-npm publish
+npx create-mern-app-connected@latest my-project
 ```
 
----
+## 💡 Contributing
+Feel free to fork this repository and submit a pull request with improvements! If you find any issues, please report them.
 
-## 🛠 **Contributing**
-We welcome contributions! If you’d like to improve this tool, feel free to fork, create pull requests, or submit issues.
-
-1. Fork the repository
-2. Create a new branch (`feature-branch`)
-3. Commit your changes
-4. Push to your branch and create a PR
-
----
-
-## 📜 **License**
+## 📜 License
 This project is licensed under the MIT License.
-
-💡 **Happy Coding!** 🎉
 
