@@ -1,0 +1,14 @@
+{
+    "name": "create-mern-app",
+    "version": "1.0.0",
+    "description": "CLI tool to create a MERN stack project",
+    "bin": {
+      "create-mern": "./create-mern.mjs"
+    },
+    "type": "module",
+    "dependencies": {},
+    "engines": {
+      "node": ">=16"
+    }
+  }
+  
